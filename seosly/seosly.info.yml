@@ -1,0 +1,27 @@
+name: Seosly base
+description: 'SEO - ориентированная базовая тема. Адаптивная, построена по принципу mobile-fitst.'
+screenshot: public/images/logotheme.png
+logo: logo.svg
+
+#core: 8.x
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: false
+
+libraries:
+  - seosly/global-css
+  - seosly/global-js
+
+regions:
+  header: 'Header'
+  menu_site: 'Site Menu'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+  bottom: 'Bottom'

@@ -1,0 +1,15 @@
+global-css:
+  version: VERSION
+  css:
+   base:
+    public/css/styles.css: {}
+global-js:
+  js:
+    public/js/scripts.js: {}
+#  dependencies:
+#    - STARTER/google.fonts
+
+#google.fonts:
+#  css:
+#    theme:
+#      //fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic&display=swap: { type: external, minified: true }
