@@ -1,0 +1,53 @@
+.switch input, input#isexpanded {
+    display: none;
+}
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.switch-wrapper input:checked+.slider {
+    background: rgba(95,99,104,.45);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider {
+    background: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.switch-wrapper input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+    content: url(../images/icons/sun.svg);
+    background-color: var(--color);
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider:before {
+    background: var(--color);
+    bottom: 4px;
+    content: url(../images/icons/moon_light.svg);
+    height: 25px;
+    left: 4px;
+    transition: .4s;
+    width: 25px;
+}
+
+.slider, .slider:before {
+    position: absolute;
+}
