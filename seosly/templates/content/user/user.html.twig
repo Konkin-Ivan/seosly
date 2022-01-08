@@ -1,0 +1,9 @@
+<article{{ attributes.addClass(classes) }}>
+  {% block user %}
+    {% if content %}
+      {% block content %}
+        {{- content -}}
+      {% endblock %}
+    {% endif %}
+  {% endblock user %}
+</article>
