@@ -1,0 +1,70 @@
+.button {
+    padding: 0.7rem;
+    border: 0;
+    .blue-button(); // миксин для синих кнопок
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+input[type=email],
+input[type=url],
+input[type=text], textarea {
+    padding: 0.6rem;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid var(--link-color);
+    outline: 0;
+}
+
+a {
+    color: var(--link-color);
+}
+
+.attributes-tags > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.attributes-tags div > div {
+    margin-right: 10px;
+}
+
+.social-icon {
+    margin: 20px;
+    a {
+        margin-right: 10px;
+    }
+}
+
+.telegram {
+    &::after {
+        content: '';
+    background: url(../images/icons/telegram.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    display: inline-block;
+    }
+}
+
+.instagram {
+    &::after {
+        content: '';
+    background: url(../images/icons/instagram.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    display: inline-block;
+    }
+}
+
+.github {
+    &::after {
+        content: '';
+    background: url(../images/icons/github.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    display: inline-block;
+    }
+}

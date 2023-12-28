@@ -1,0 +1,89 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @font-face {
+    font-family: 'RobotoRegular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'FontDocker';
+    src: url(../fonts/docker/dockertwo.ttf);
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'FontDockerH1';
+    src: url(../fonts/docker/dockerone.ttf);
+    font-display: swap;
+  }
+ 
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--card-tiser);
+  background-image: url(../images/bg.svg);
+  background-size: 512px, cover, 26rem;
+  background-position: center, 0% 0%, top;
+  background-repeat: repeat-y;
+
+}
+
+p {
+  margin-top: var(--p-margin--y);
+  margin-bottom: var(--p-margin--y);
+}
+
+small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+big {
+  font-size: 120%;
+  font-weight: normal;
+}
+
+mark {
+  padding: var(--spacing-xs);
+  background-color: var(--mark-background);
+}
+
+code {
+  font-family: var(--font-monospace);
+  font-size: 90%;
+  padding: 0.2em 0.4em;
+  word-break: break-all;
+  border-radius: var(--radius-xs);
+  background-color: var(--code-background);
+}
+
+pre code {
+  // Fixes unwanted padding for first and last line of code.
+  padding: unset;
+}
+
+strong {
+  display: inline-block;
+}
+
+html {
+  // Initial for (R)EM.
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+}
+
+//@import 'view-mod/_view-mod.less';
+@import '_variables.less';
+@import '_mixins.less';
+@import '_media-color-scheme-options.less';

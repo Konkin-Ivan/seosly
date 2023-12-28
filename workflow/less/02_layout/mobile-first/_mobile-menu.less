@@ -1,0 +1,102 @@
+/**
+ * Mobile menu
+ */
+ #block-mainmenu ul {
+    margin: 0;
+    padding: 0;
+  }
+  #block-mainmenu ul li {
+    list-style: none;
+  }
+  #block-mainmenu ul li a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #block-mainmenu {
+    position: fixed;
+    left: -100%;
+    -webkit-transition: left 0.7s;
+    transition: left 0.7s;
+    padding: 25%;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background: var(--theme-bg);
+  }
+  .info-child-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #block-brendingsayta img {
+    width: 75px;
+    height: 75px;
+  }
+  #block-brendingsayta {
+    font-size: 0.5rem;
+    color: var(--color);
+    font-family: sans-serif;
+  }
+  #block-brendingsayta a {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--color);
+    font-family: fantasy;
+    text-decoration: none;
+  }
+  .info-child-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  input#isexpanded {
+    display: none;
+  }
+  label#expand-btn,
+  label#expand-btn:after,
+  label#expand-btn:before {
+    width: 30px;
+    height: 5px;
+    background-color: var(--color);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  label#expand-btn {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    z-index: 3;
+  }
+  label#expand-btn:after,
+  label#expand-btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  label#expand-btn:after {
+    top: 9px;
+  }
+  #isexpanded:checked ~ #expand-btn {
+    background-color: transparent;
+  }
+  #isexpanded:checked ~ #expand-btn:after {
+    -webkit-transform: rotate(-45deg) translate(7px, -8px);
+            transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #isexpanded:checked ~ #expand-btn:before {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(5px, 5px);
+  }
+  #isexpanded:checked ~ * #block-mainmenu {
+    left: -1px;
+  }
